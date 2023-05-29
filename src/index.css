@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  /*color: #1f7bad;*/
+  font-size: 18px;
+}
+
+button {
+  padding: 0.5em;
+  background-color: #222;
+  /*border should be a gradient from pink to hotpink*/
+  border: 3px solid #444;
+  color: #ccc;
+  margin-bottom: 0.5em;
+  /*border-radius: 5px;*/
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  /*  text should have shadow*/
+  /*text-shadow: 1px 1px 1px hotpink;*/
+}
+
+input {
+  font-size: 0.7em;
+  padding: 0.5em;
+  font-weight: bold;
+  color: white;
+}
+
+/*disabled input should be clear*/
+input:disabled,
+input:disabled::placeholder,
+button:disabled {
+  border: none !important;
+  text-decoration: initial !important;
+  background-color: #333 !important;
+  color: #555 !important;
+  text-shadow: initial;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 2em;
+}
+
+h2 {
+  color: orangered;
+  font-size: 1.5em;
+}
+
+h3 {
+  color: rgba(240, 128, 128, 0.7);
+  font-size: 1.2em;
+}

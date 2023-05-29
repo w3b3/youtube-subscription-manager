@@ -1,0 +1,87 @@
+.App {
+  border: 5px solid dodgerblue;
+  padding: 0.8em;
+}
+
+.AppHeader {
+  display: flex;
+}
+
+.UserSection {
+  flex: 1;
+  border: 5px solid rebeccapurple;
+  padding: 0.8em;
+  margin: 0.8em;
+}
+
+.ControlsSection {
+  border: 5px solid crimson;
+  padding: 0.8em;
+  margin: 0.8em;
+}
+
+.CardsListSection {
+  flex: 1;
+  border: 5px solid darkgreen;
+  padding: 0.8em;
+  margin: 0.8em;
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card {
+  border: 5px solid lightgoldenrodyellow;
+  padding: 0.8em;
+  margin: 0.8em;
+  min-width: 200px;
+}
+
+.Card .Controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.AppHeader .Controls {
+  /*  should be stacked*/
+  display: flex;
+  flex-direction: column;
+}
+
+.CardsHeaderAndSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*font-size: 1.5em;*/
+  font-weight: bold;
+  /*  text should be underlined*/
+  /*text-decoration: underline;*/
+}
+
+/* AppHeader contents should stack in less than 640px  */
+@media (max-width: 640px) {
+  .AppHeader {
+    flex-direction: column;
+  }
+  /*  buttons in the AppHeader should take all width */
+  .AppHeader button {
+    width: 100%;
+  }
+  /*  h1 and h2 should have no margins or paddings*/
+  .AppHeader h1,
+  .AppHeader h2 {
+    margin: 0;
+    padding: 0;
+  }
+  /*  Card should take full width*/
+  .Card {
+    width: 100%;
+  }
+  /*  button in Card should take full width*/
+  .Card button {
+    width: 100%;
+  }
+}
